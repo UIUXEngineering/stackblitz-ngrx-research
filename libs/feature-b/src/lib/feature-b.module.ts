@@ -4,7 +4,11 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { StoreModule } from '@ngrx/store';
-import { commonFeatureKey, commonReducer } from '@stackblitz-ngrx-research/feature-c';
+import {
+  commonFeatureKey,
+  commonReducer,
+  SharedComponentModule
+} from '@stackblitz-ngrx-research/feature-c';
 
 import { FeatureBRoutingModule } from './feature-b-routing.module';
 import { FeatureBComponent } from './feature-b/feature-b.component';
@@ -21,6 +25,8 @@ import { FeatureBComponent } from './feature-b/feature-b.component';
     MatInputModule,
 
     StoreModule.forFeature(commonFeatureKey, commonReducer),
+
+    SharedComponentModule,
   ]
 })
 export class FeatureBModule {
