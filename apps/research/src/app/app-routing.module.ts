@@ -29,11 +29,11 @@ const routes: Routes = [
         loadChildren: () => import('libs/feature-b/src/lib/feature-b.module').then((m) => m.FeatureBModule),
         data: { preload: true },
       },
-      {
-        path: 'feature-c',
-        loadChildren: () => import('libs/feature-c/src/lib/feature-c.module').then((m) => m.FeatureCModule),
-        data: { preload: true },
-      },
+      // {
+      //   path: 'feature-c',
+      //   loadChildren: () => import('libs/feature-c/src/lib/feature-c.module').then((m) => m.FeatureCModule),
+      //   data: { preload: true },
+      // },
     ]
 
   },
