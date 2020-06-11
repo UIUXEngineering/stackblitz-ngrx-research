@@ -1,0 +1,20 @@
+{
+  "extends": "../../tslint.json",
+  "rules": {
+    "directive-selector": [
+      true,
+      "attribute",
+      "stackblitzNgrxResearch",
+      "camelCase"
+    ],
+    "component-selector": [
+      true,
+      "element",
+      "stackblitz-ngrx-research",
+      "kebab-case"
+    ]
+  },
+  "linterOptions": {
+    "exclude": ["!**/*"]
+  }
+}

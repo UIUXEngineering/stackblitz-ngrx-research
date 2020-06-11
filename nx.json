@@ -25,6 +25,15 @@
     "research-e2e": {
       "tags": [],
       "implicitDependencies": ["research"]
+    },
+    "feature-a": {
+      "tags": []
+    },
+    "feature-b": {
+      "tags": []
+    },
+    "feature-c": {
+      "tags": []
     }
   }
 }

@@ -123,6 +123,102 @@
           }
         }
       }
+    },
+    "feature-a": {
+      "projectType": "library",
+      "root": "libs/feature-a",
+      "sourceRoot": "libs/feature-a/src",
+      "prefix": "stackblitz-ngrx-research",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/feature-a/tsconfig.lib.json",
+              "libs/feature-a/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/feature-a/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/feature-a/jest.config.js",
+            "tsConfig": "libs/feature-a/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/feature-a/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "feature-b": {
+      "projectType": "library",
+      "root": "libs/feature-b",
+      "sourceRoot": "libs/feature-b/src",
+      "prefix": "stackblitz-ngrx-research",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/feature-b/tsconfig.lib.json",
+              "libs/feature-b/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/feature-b/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/feature-b/jest.config.js",
+            "tsConfig": "libs/feature-b/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/feature-b/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "feature-c": {
+      "projectType": "library",
+      "root": "libs/feature-c",
+      "sourceRoot": "libs/feature-c/src",
+      "prefix": "stackblitz-ngrx-research",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/feature-c/tsconfig.lib.json",
+              "libs/feature-c/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/feature-c/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/feature-c/jest.config.js",
+            "tsConfig": "libs/feature-c/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/feature-c/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
     }
   },
   "cli": {

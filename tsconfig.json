@@ -15,7 +15,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@stackblitz-ngrx-research/feature-a": ["libs/feature-a/src/index.ts"],
+      "@stackblitz-ngrx-research/feature-b": ["libs/feature-b/src/index.ts"],
+      "@stackblitz-ngrx-research/feature-c": ["libs/feature-c/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
