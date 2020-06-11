@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'stackblitz-ngrx-research-feature-a',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./feature-a.component.scss']
 })
 export class FeatureAComponent implements OnInit {
+
+  formInput = new FormControl('');
 
   constructor() { }
 
