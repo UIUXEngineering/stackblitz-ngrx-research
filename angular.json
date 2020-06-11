@@ -241,7 +241,8 @@
     }
   },
   "cli": {
-    "defaultCollection": "@ngrx/schematics"
+    "defaultCollection": "@ngrx/schematics",
+    "analytics": false
   },
   "schematics": {
     "@nrwl/angular:application": {
