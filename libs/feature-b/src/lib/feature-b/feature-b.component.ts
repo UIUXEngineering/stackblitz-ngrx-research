@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { select, Store } from '@ngrx/store';
-import { selectValue } from '@stackblitz-ngrx-research/feature-c';
+import { selectValue, setValue } from '@stackblitz-ngrx-research/feature-c';
 
 @Component({
   selector: 'stackblitz-ngrx-research-feature-b',
@@ -20,6 +20,12 @@ export class FeatureBComponent implements OnInit {
     ).
     subscribe((value: string) => {
       this.formInput.reset(value, { emitEvent: false });
+    })
+
+    this.formInput.valueChanges.subscribe((value) => {
+      this.store.dispatch(setValue({
+        value,
+      }))
     })
   }
 

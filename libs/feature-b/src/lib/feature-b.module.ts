@@ -23,4 +23,8 @@ import { FeatureBComponent } from './feature-b/feature-b.component';
     StoreModule.forFeature(commonFeatureKey, commonReducer),
   ]
 })
-export class FeatureBModule { }
+export class FeatureBModule {
+  constructor() {
+    console.log("Feature B Module Loaded");
+  }
+}

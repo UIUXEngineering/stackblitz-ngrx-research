@@ -42,6 +42,7 @@
     "@ngrx/effects": "^9.2.0",
     "@ngrx/schematics": "^9.2.0",
     "@ngrx/store": "^9.2.0",
+    "@ngrx/store-devtools": "^9.2.0",
     "@nrwl/angular": "9.3.0",
     "core-js": "^2.5.4",
     "rxjs": "~6.5.4",
