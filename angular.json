@@ -25,7 +25,9 @@
               "apps/research/src/favicon.ico",
               "apps/research/src/assets"
             ],
-            "styles": ["apps/research/src/styles.scss"],
+            "styles": [
+              "apps/research/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -83,7 +85,10 @@
               "apps/research/tsconfig.app.json",
               "apps/research/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/research/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/research/**"
+            ]
           }
         },
         "test": {
@@ -118,8 +123,13 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["apps/research-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/research-e2e/**"]
+            "tsConfig": [
+              "apps/research-e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/research-e2e/**"
+            ]
           }
         }
       }
@@ -137,7 +147,10 @@
               "libs/feature-a/tsconfig.lib.json",
               "libs/feature-a/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/feature-a/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/feature-a/**"
+            ]
           }
         },
         "test": {
@@ -169,7 +182,10 @@
               "libs/feature-b/tsconfig.lib.json",
               "libs/feature-b/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/feature-b/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/feature-b/**"
+            ]
           }
         },
         "test": {
@@ -201,7 +217,10 @@
               "libs/feature-c/tsconfig.lib.json",
               "libs/feature-c/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/feature-c/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/feature-c/**"
+            ]
           }
         },
         "test": {
@@ -222,8 +241,7 @@
     }
   },
   "cli": {
-    "defaultCollection": "@nrwl/angular",
-    "analytics": false
+    "defaultCollection": "@ngrx/schematics"
   },
   "schematics": {
     "@nrwl/angular:application": {

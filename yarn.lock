@@ -1418,6 +1418,11 @@
     merge-source-map "^1.1.0"
     schema-utils "^2.6.4"
 
+"@ngrx/schematics@^9.2.0":
+  version "9.2.0"
+  resolved "https://registry.yarnpkg.com/@ngrx/schematics/-/schematics-9.2.0.tgz#db2630875393f7a13373b8b9ef8fff193322334a"
+  integrity sha512-jO3NNh2CJOxMaMyoBg/BqH/zyAeKZJFh97p14DojkfXx7Kc6NuIG04t+4xNe8X3sbdV2LIr6tr9P8nHAYHgMpA==
+
 "@ngrx/store@^9.2.0":
   version "9.2.0"
   resolved "https://registry.yarnpkg.com/@ngrx/store/-/store-9.2.0.tgz#39f663f98b5332b33c8d197be3ab08bafd85bc88"
