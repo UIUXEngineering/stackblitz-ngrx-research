@@ -12,17 +12,6 @@
     <mat-icon>format_color_fill</mat-icon>
   </button>
 
-  <a mat-button class="docs-button docs-navbar-hide-small"
-     matTooltip="PR's Welcome!"
-     matTooltipPosition="below"
-     target="_blank"
-     href="https://github.com/UIUXEngineering/stackblitz-ngrx-research"
-     aria-label="GitHub Repository">
-    <img class="docs-angular-logo"
-         src="./assets/img/homepage/github-circle-white-transparent.svg"
-         alt="angular material">
-    GitHub
-  </a>
 </mat-toolbar>
 <mat-sidenav-container>
   <mat-sidenav mode="side"
@@ -32,10 +21,17 @@
                [fixedBottomGap]="0">
 
     <mat-nav-list>
-      <a routerLink="/typography" mat-list-item >
-        <span mat-line>Typography</span>
+      <a routerLink="/feature-a" mat-list-item >
+        <span mat-line>Lazy load Feature A</span>
       </a>
 
+      <a routerLink="/feature-b" mat-list-item >
+        <span mat-line>Lazy load Feature B</span>
+      </a>
+
+      <a routerLink="/feature-c" mat-list-item >
+        <span mat-line>Lazy load Feature C</span>
+      </a>
 
 
     </mat-nav-list>
