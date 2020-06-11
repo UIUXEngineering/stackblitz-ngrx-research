@@ -9,24 +9,46 @@
 // Be sure that you only ever include this mixin once!
 @include mat-core();
 
+// Define the light theme
+
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
-// hue. Available color palettes: https://material.io/design/color/
-$research-primary: mat-palette($mat-indigo);
-$research-accent: mat-palette($mat-pink, A200, A100, A400);
+// hue.
+// Material Color Variables: https://github.com/angular/components/blob/master/src/material/core/theming/_palette.scss#L39
+// Available color palettes: https://material.io/design/color/
+$config-angular-material-theme-components-primary: mat-palette($mat-indigo);
+$config-angular-material-theme-components-accent: mat-palette($mat-pink, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
-$research-warn: mat-palette($mat-red);
+$config-angular-material-theme-components-warn: mat-palette($mat-red);
 
 // Create the theme object (a Sass map containing all of the palettes).
-$research-theme: mat-light-theme($research-primary, $research-accent, $research-warn);
+$config-angular-material-theme-components-theme: mat-light-theme(
+    $config-angular-material-theme-components-primary,
+    $config-angular-material-theme-components-accent,
+    $config-angular-material-theme-components-warn);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
-@include angular-material-theme($research-theme);
+@include angular-material-theme($config-angular-material-theme-components-theme);
 
-/* You can add global styles to this file, and also import other style files */
+
+// Define an alternate dark theme.
+$dark-primary: mat-palette($mat-blue-grey);
+$dark-accent:  mat-palette($mat-amber, A200, A100, A400);
+$dark-warn:    mat-palette($mat-deep-orange);
+$dark-theme:   mat-dark-theme($dark-primary, $dark-accent, $dark-warn);
+
+
+.unicorn-dark-theme {
+  $background: map-get($dark-theme, background);
+
+  color: white;
+  @include angular-material-theme($dark-theme);
+
+  background-color: map-get($background, background);
+}
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
